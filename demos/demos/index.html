@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Everyday Bootstrap</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/global.css" rel="stylesheet" media="screen">
+	<style>
+		#demos div[class^="col"] {
+			border:1px solid transparent;
+			padding-top:10px;
+		}
+
+		#demos div[class^="col"] .h2 {
+			margin-bottom:10px;
+			padding-bottom:10px;
+			border-bottom:1px solid #ddd;
+		}
+
+		#demos div[class^="col"]:hover {
+			border:1px solid #ccc;
+			border-radius:5px;
+			background-color:#f5f5f5;
+		}
+
+		#demos div[class^="col"] a {
+			text-decoration:none;
+		}
+	</style>
+</head>
+<body>
+	<section class="container">
+		<div class="navbar navbar-default">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"><img src="img/everyday-bootstrap.png" class="img-responsive" /></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Demos <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="00-template.html"><i class="icon-pencil"></i> Basic Template</a></li>
+							<li><a href="01-grid.html"><i class="icon-th-large"></i> Layout Grid</a></li>
+							<li><a href="02-responsive.html"><i class="icon-fullscreen"></i> Responsive Utilities</a></li>
+							<li><a href="03-tables.html"><i class="icon-table"></i> Tables</a></li>
+							<li><a href="04-themes.html"><i class="icon-star-half-full"></i> Themes</a></li>
+							<li><a href="05-images.html"><i class="icon-picture"></i> Responsive Images</a></li>
+							<li><a href="06-scrollspy.html"><i class="icon-desktop"></i> Scrollspy</a></li>
+							<li><a href="07-affix.html"><i class="icon-indent-right"></i> Affix Left</a>
+							<li><a href="08-affix-scrollspy.html"><i class="icon-indent-right"></i> Affix with Scrollspy</a>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+
+							<li class="divider"></li>
+							<li class="dropdown-header">Must-Haves</li>
+							<li><a href="http://http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a></li>
+							<li><a href="http://bootstrapcdn.com" target="_blank">Bootstrap CDN</a></li>
+
+							<li class="divider"></li>
+							<li class="dropdown-header">Inspiration</li>
+							<li><a href="http://builtwithbootstrap.com/" target="_blank">Built with Bootstrap</a></li>
+							<li><a href="http://tutorialzine.com/2013/07/50-must-have-plugins-for-extending-twitter-bootstrap/" target="_blank">50 Must-Have Plug-Ins</a></li>
+
+							<li class="divider"></li>
+							<li class="dropdown-header">WYSIWYG</li>
+							<li><a href="http://jetstrap.com" target="_blank">Jetstrap</a></li>
+							<li><a href="http://getkickstrap.com" target="_blank">Kickstrap</a></li>
+
+							<li class="divider"></li>
+							<li class="dropdown-header">Themes</li>
+							<li><a href="http://bootswatch.com/" target="_blank">Bootswatch</a></li>
+							<li><a href="http://wrapbootstrap.com/" target="_blank">Wrap Bootstrap</a></li>
+							<li><a href="http://pikock.github.io/bootstrap-magic/" target="_blank">Bootstrap Magic</a></li>
+
+							<li class="divider"></li>
+							<li class="dropdown-header">Components</li>
+							<li><a href="http://exacttarget.github.io/fuelux/" target="_blank">Fuel UX</a></li>
+							<li><a href="http://bootstraphero.com/the-big-badass-list-of-twitter-bootstrap-resources" target="_blank">319 Bootstrap Resources</a></li>
+
+							<li class="divider"></li>
+							<li class="dropdown-header">Shield Your Eyes!</li>
+							<li><a href="http://divshot.github.io/geo-bootstrap/" target="_blank">Geo Bootstrap</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<section id="demos" class="push-down-top-xl">
+				<div class="row">
+					<a href="00-template.html">
+						<div class="col-sm-4">
+							<div class="h2"><i class="icon-pencil"></i> Basic Template</div>
+							<p>Explore the default template that comes stock with Bootstrap.</p>
+						</div>
+					</a>
+
+					<a href="01-grid.html">
+						<div class="col-sm-4">
+							<div class="h2"><i class="icon-th-large"></i> Layout Grid</div>
+							<p>Learn how to create responsive grid-based page layouts.</p>
+						</div>
+					</a>
+
+					<a href="02-responsive.html">
+						<div class="col-sm-4">
+							<div class="h2"><i class="icon-fullscreen"></i> Responsive Utilities</div>
+							<p>Use thes helpers to make your pages work on devices big and small.</p>
+						</div>
+					</a>
+				</div>
+				<div class="row">
+					<a href="03-tables.html">
+						<div class="col-sm-4">
+							<div class="h2"><i class="icon-table"></i> Tables</div>
+							<p>Tabular data never looked or acted so good with Bootstrap.</p>
+						</div>
+					</a>
+
+					<a href="04-themes.html">
+						<div class="col-sm-4">
+							<div class="h2"><i class="icon-star-half-full"></i> Themes</div>
+							<p>See how different themes dramatically change the layout.</p>
+						</div>
+					</a>
+					<a href="05-images.html">
+						<div class="col-sm-4">
+							<div class="h2"><i class="icon-picture"></i> Images</div>
+							<p>Avoid responsive design gotchas by learning to deal with images appropriately.</p>
+						</div>
+					</a>
+					
+				</div>
+				<div class="row">
+					<a href="06-scrollspy.html">
+						<div class="col-sm-4">
+							<div class="h2"><i class="icon-desktop"></i> Scrollspy</div>
+							<p>Learn to keep nav bars synchronized with scrolling content.</p>
+						</div>
+					</a>
+
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<div class="col-sm-4">
+							<div class="h2"><i class="icon-indent-right"></i> Affix <span class="caret"></span></div>
+							<p>Create a &quot;sticky&quot; navigation menus on the left and top of the page.</p>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="07-affix.html">Menu Affixed to Left</a></li>
+								<li><a href="08-affix-scrollspy.html">Horizontal Menu Affixed to Top with Scrollspy</a></li>
+							</ul>
+						</div>
+					</a>
+
+				</div>
+			</section>
+		</div>
+		<hr />
+		<footer class="text-center">
+			<a href="http://twitter.com/craigshoemaker">Demos by <img src="img/craigshoemaker-sm.png" /></a>
+		</footer>
+	</section>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

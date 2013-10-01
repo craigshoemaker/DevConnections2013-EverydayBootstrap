@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Affix :: Everyday Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="css/global.css" rel="stylesheet" media="screen">
+    <style>
+
+        header {
+            position:relative;
+        }
+
+        .col-sm-9 div[id] {
+            /*  Adds whitespace where content
+                would go on a real page. */
+            margin-bottom:300px;
+        }
+
+        #page-nav ul li {
+            margin-top:10px;
+            margin-bottom:10px;
+            font-size:1.5em;
+        }
+
+        #page-nav {
+            width:100%;
+        }
+
+
+        footer {
+            border-top:1px solid #eee;
+            padding-top:15px;
+            margin-bottom:500px;
+        }
+
+        /*
+            #page-nav.affix-top,
+            #page-nav.affix,
+            #page-nav.affix-bottom {
+                position:relative;            
+            {
+                */
+
+        @media (min-width: 992px) {
+
+            #page-nav {
+                width: 100px;
+            }
+
+                #page-nav.affix-top {
+                    position: absolute;
+                    top: 0px;
+                    margin-top: 300px;
+                    margin-left: 0.15%;
+                    border: 1px solid pink;
+                }
+
+                #page-nav.affix {
+                    position: fixed;
+                    top:0px;
+                    margin-top: 0px;
+                    margin-left: 0px;
+                    border:1px solid maroon;
+                }
+
+                #page-nav.affix-bottom {
+                    position: absolute;
+                    border:10px solid pink;
+                }
+         }
+    </style>
+    <title></title>
+</head>
+<body>
+    <div class="home-button"><a class="btn btn-default btn-sm btn-info" href="index.html">Home</a></div>
+    <section class="container">
+        <header>
+            <div class="jumbotron">
+                <div class="container">
+                    <h1>Hello, Jumbotron!</h1>
+                    <p>...</p>
+                    <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+                </div>
+            </div>
+        </header>
+        <div>
+            <div id="page-nav" 
+                class="affix-top"
+                data-spy="affix">
+                <ul class="list-unstyled">
+                    <li><a href="#one">One</a></li>
+                    <li><a href="#two">Two</a></li>
+                    <li><a href="#three">Three</a></li>
+                    <li><a href="#four">Four</a></li>
+                    <li><a href="#five">Five</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-9 col-sm-offset-3">
+                <div id="one"><h2>One</h2><hr /></div>
+                <div id="two"><h2>Two</h2><hr /></div>
+                <div id="three"><h2>Three</h2><hr /></div>
+                <div id="four"><h2>Four</h2><hr /></div>
+                <div id="five"><h2>Five</h2><hr /></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <a href="http://twitter.com/craigshoemaker">Demos by <img src="img/craigshoemaker-sm.png" /></a>
+    </footer>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+
+            $('#page-nav').affix({
+                offset: {
+                    top: function() {
+                        var top = this.top = $('header').outerHeight(true);
+                        return top;
+                    },
+                    bottom: function() {
+                        var btm = this.bottom = $('footer').outerHeight(true) + 50;
+                        return btm;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

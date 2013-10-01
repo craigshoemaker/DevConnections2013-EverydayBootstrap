@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Horizontal Affix with Scrollspy:: Everyday Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="css/global.css" rel="stylesheet" media="screen">
+    <style>
+        .col-sm-9 div[id] {
+            margin-bottom:400px;
+            /*margin-bottom:600px;*/
+        }
+
+        .affix-top {
+            position:relative;
+        }
+
+        .affix {
+            position:fixed;
+            width:90%;
+            top:10px;
+        }
+    </style>
+    <title></title>
+</head>
+<body 
+    data-spy="scroll"
+    data-target="#site-nav"
+    data-offset="165">
+    <div class="home-button"><a class="btn btn-default btn-sm btn-info" href="index.html">Home</a></div>
+    <section class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Hello, Jumbotron!</h1>
+                <p>...</p>
+                <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+            </div>
+        </div>
+        <nav id="site-nav" 
+            class="navbar navbar-default navbar-static affix-top"
+            data-spy="affix" 
+            data-offset-top="250" 
+            data-offset-bottom="400"
+            role="navigation">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-js-navbar-scrollspy">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project Name</a>
+            </div>
+            <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#one">One</a></li>
+                    <li><a href="#two">Two</a></li>
+                    <li><a href="#three">Three</a></li>
+                    <li><a href="#four">Four</a></li>
+                    <li><a href="#five">Five</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-9">
+                <div id="one"><h2>One</h2><hr /></div>
+                <div id="two"><h2>Two</h2><hr /></div>
+                <div id="three"><h2>Three</h2><hr /></div>
+                <div id="four"><h2>Four</h2><hr /></div>
+                <div id="five"><h2>Five</h2><hr /></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

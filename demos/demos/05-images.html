@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Images</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="css/global.css" rel="stylesheet" media="screen">
+    <title></title>
+    <style>
+        [data-role="content-section"],footer {
+            margin-top:1000px;
+        }
+
+        pre {
+            font-size:1.5em;
+        }
+    </style>
+</head>
+<body 
+    data-spy="scroll" 
+    data-target="#scrollspy-navbar"
+    data-offset="150">
+
+    <div class="home-button"><a class="btn btn-default btn-sm btn-info" href="index.html">Home</a></div>
+    <section class="container">
+        <header>
+            <div class="page-header">
+                <h1>Images <small> - responsive images done right</small></h1>
+            </div>
+            <nav
+                id="scrollspy-navbar"
+                class="navbar navbar-default navbar-static"
+                role="navigation">
+                <div class="navbar-header">
+                    <button
+                        class="navbar-toggle"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target=".bs-js-navbar-scrollspy">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#bootstrap">Bootstrap CSS</a></li>
+                        <li><a href="#picture"><code>picture</code> <i class="icon-beaker"></i></a></li>
+                        <li><a href="#picturefill">PictureFill</a></li>
+                        <li><a href="#picturefill-updated">PictureFill <span class="badge">Updated</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="bootstrap" data-role="content-section">
+                <h2 class="h4">Bootstrap CSS Class</h2>
+                <img src="img/scuba-700.jpg" class="img-responsive" />
+            </section>
+
+            <section id="picture" data-role="content-section">
+                <h2 class="h4">Picture Element</h2>
+                <pre>
+&lt;picture width="500" height="500"&gt;
+    &lt;source media="(min-width: 45em)" src="large.jpg"&gt;
+    &lt;source media="(min-width: 18em)" src="med.jpg"&gt;
+    &lt;source src="small.jpg"&gt;
+    &lt;img src="small.jpg" alt="" lazyload&gt;
+    &lt;p&gt;Accessible text&lt;/p&gt;
+&lt;/picture&gt;</pre>
+                <p class="alert alert-info"><strong>NOTE:</strong> The <a href="http://responsiveimages.org" target="_blank"><code>picture</code> element specification</a> is still under revision.</p>
+            </section>
+
+            <section id="picturefill" data-role="content-section">
+                <h2 class="h4">PictureFill</h2>
+                <span 
+                    data-picture
+                    data-alt="Scuba Safety">
+                    <span data-src="img/scuba-200.jpg"></span>
+                    <span data-src="img/scuba-300.jpg"   data-media="(min-width: 320px)"></span>
+                    <span data-src="img/scuba-500.jpg"   data-media="(min-width: 600px)"></span>
+                    <span data-src="img/scuba-700.jpg"  data-media="(min-width: 700px)"></span>
+
+                    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                    <noscript>
+                        <img src="img/scuba-300.jpg" alt="Scuba Safety">
+                    </noscript>
+                </span>
+            </section>
+
+            <section id="picturefill-updated" data-role="content-section">
+                <h2 class="h4">PictureFill <span class="badge">Updated</span></h2>
+                <span 
+                    data-picture
+                    class="img-responsive"
+                    title="Scuba Safety"
+                    data-alt="Scuba Safety">
+                    <span data-src="img/scuba-200.jpg"></span>
+                    <span data-src="img/scuba-300.jpg"   data-media="(min-width: 320px)"></span>
+                    <span data-src="img/scuba-500.jpg"   data-media="(min-width: 500px)"></span>
+                    <span data-src="img/scuba-700.jpg"  data-media="(min-width: 700px)"></span>
+
+                    <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                    <noscript>
+                        <img src="img/scuba-300.jpg" alt="Scuba Safety">
+                    </noscript>
+                </span>
+            </section>
+        </main>
+        <footer class="text-center">
+            <a href="http://twitter.com/craigshoemaker">Demos by <img src="img/craigshoemaker-sm.png" /></a>
+        </footer>
+    </section>    
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/picturefill.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home :: CodedHomes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <main class="container">
+        <nav id="top-nav" class="navbar navbar-default push-down-top-md" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html"><img src="img/coded-homes-logo.png" class="img-responsive" alt="CodedHomes" title="CodedHomes" /></a>
+          </div>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Listings <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="list.html">Homes List</a></li>
+                  <li><a href="add.html">Add Home</a></li>
+                </ul>
+              </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <form id="search-top-form" class="navbar-form" role="search">
+              <div class="form-group push-down-top-xs">
+                <input type="text" class="form-control input-sm search-top" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default btn-xs input-sm push-down-top-xs">Go</button>
+            </form>
+          </div>
+        </nav>
+
+        <div class="img-center">
+            <span 
+                data-picture 
+                class="img-responsive" 
+                title="CodedHomes: The leader in fake home listings since 1776." 
+                data-alt="CodedHomes: The leader in fake home listings since 1776.">
+                <span data-src="img/home-200.jpg"></span>
+                <span data-src="img/home-400.jpg"   data-media="(min-width: 400px)"></span>
+                <span data-src="img/home-800.jpg"   data-media="(min-width: 800px)"></span>
+                <span data-src="img/home-1000.jpg"  data-media="(min-width: 1000px)"></span>
+
+                <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+                <noscript>
+                    <img src="img/home-400.jpg" class="img-responsive" alt="CodedHomes: The leader in fake home listings since 1776.">
+                </noscript>
+            </span>
+        </div>
+
+        <div class="container push-down-top-lg focus-panel main-content-container">
+            <div class="row lead">
+                <a href="#none">
+                    <div class="col-sm-4 cell">
+                        <div class="icon"><i class="icon-bullhorn"></i></div>
+                        <p>There's a lot of exciting activity happening every day
+                            at CodedHomes.</p>
+                    </div>
+                </a>
+                <a href="#none">
+                    <div class="col-sm-4 cell">
+                        <div class="icon"><i class="icon-camera"></i></div>
+                        <p>Browse the gallery, take interactive tours and experience
+                           our homes right from the comfort of yours.</p>
+                    </div>
+                </a>
+                <a href="#none">
+                    <div class="col-sm-4 cell">
+                        <div class="icon"><i class="icon-comments"></i></div>
+                        <p>Find out what other home owners are saying 
+                            about CodedHomes!</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+        <footer class="container push-down-top-lg">
+            <div class="row">
+                <div class="col-sm-4 push-down-top-md about">
+                    <h4>About</h4>
+                    <img src="img/coded-homes-grey.png" class="img-responsive" />
+                    <p>CodedHomes is the leader in fake home listings since 1776.</p>
+                </div>
+                <div class="col-sm-2 push-down-top-md">
+                    <h4>Sitemap</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="list.html" data-toggle="tooltip" title="List of available homes.">Homes List</a></li>
+                        <li><a href="add.html">Add Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 push-down-top-md">
+                    <h4>Connect</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="http://twitter.com/codedhomes" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
+                        <li><a href="#facebook"><i class="icon-facebook"></i> Facebook</a></li>
+                        <li><a href="#linkedin"><i class="icon-linkedin"></i> Linked In</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 push-down-top-md">
+                    <h4>Contact Us</h4>
+                    <address>
+                        1234 Main Street<br />
+                        Los Angeles, CA 90210
+                    </address>
+                </div>
+            </div>
+            <div class="text-center push-down-top-lg"><small>&copy; All Rights Reserved 2013</small></div>
+        </footer>
+    </main>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/picturefill.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $("a[href='#none']").click(function(e) {
+                e.preventDefault();
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

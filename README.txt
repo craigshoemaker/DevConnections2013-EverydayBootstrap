@@ -1,0 +1,1 @@
+Includes code from DevConnections 2013 session 'Everyday Bootstrap' by http://twitter.com/craigshoemaker

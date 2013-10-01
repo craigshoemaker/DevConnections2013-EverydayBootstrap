@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Home :: CodedHomes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <main class="container">
+        
+        <nav id="top-nav" class="navbar navbar-default push-down-top-md" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html"><img src="img/coded-homes-logo.png" alt="CodedHomes" title="CodedHomes" /></a>
+          </div>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Listings <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="list.html">Homes List</a></li>
+                  <li><a href="add.html">Add Home</a></li>
+                </ul>
+              </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <form id="search-top-form" class="navbar-form" role="search">
+              <div class="form-group push-down-top-xs">
+                <input type="text" class="form-control input-sm search-top" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default btn-xs input-sm push-down-xs">Go</button>
+            </form>
+          </div>
+        </nav>
+
+        <div class="main-content-container" role="form">
+            <h1>Add Home</h1>
+            <form id="add-home-form" name="add-home-form" class="form-horizontal">
+                <fieldset>
+                    <legend>Add a new home for listing.</legend>
+
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="address-box" class="control-label">Address</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input 
+                                type="text" 
+                                id="address-box" name="address-box"
+                                autofocus required
+                                title="Address"
+                                data-content="Enter the street address of the property you want to list."
+                                data-role="validate"
+                                class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-2"><label for="city-box" class="control-label">City</label></div>
+                        <div class="col-sm-9">
+                            <input 
+                                type="text" 
+                                id="city-box" 
+                                required
+                                title="City"
+                                data-content="Enter the city of the property you want to list."
+                                data-role="validate"
+                                name="city-box" 
+                                class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-2"><label for="state-box" class="control-label">State</label></div>
+                        <div class="col-sm-9">
+                            <input 
+                                type="text" 
+                                id="state-box" name="state-box" 
+                                style="width:90px;"
+                                title="State" 
+                                required
+                                data-role="validate"
+                                data-content="Enter the state of the property you want to list."
+                                class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-2"><label for="zipcode-box" class="control-label">Zip Code</label></div>
+                        <div class="col-sm-9">
+                            <input 
+                                type="number" 
+                                id="zipcode-box" name="zipcode-box" 
+                                required
+                                title="Zipcode"
+                                data-content="Enter the zip code of the property you want to list."
+                                data-role="validate"
+                                class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-2"><label for="comments-box" class="control-label">Comments</label></div>
+                        <div class="col-sm-9">
+                            <textarea 
+                                id="comments-box" name="comments-box" 
+                                required
+                                title="Comments"
+                                data-role="validate"
+                                data-content="Describe the condition and general appearance of the home."
+                                class="form-control"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-9">
+                            <input type="button" 
+                                id="add-home-button" name="add-home-button"
+                                value="Send" class="btn btn-default btn-primary btn-lg" />
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+
+        <footer class="container push-down-top-lg">
+            <div class="row">
+                <div class="col-sm-4 push-down-top-md about">
+                    <h4>About</h4>
+                    <img src="img/coded-homes-grey.png" class="img-responsive" />
+                    <p>CodedHomes is the leader in fake home listings since 1776.</p>
+                </div>
+                <div class="col-sm-2 push-down-top-md">
+                    <h4>Sitemap</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="list.html" data-toggle="tooltip" title="List of available homes.">Homes List</a></li>
+                        <li><a href="add.html">Add Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 push-down-top-md">
+                    <h4>Connect</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="http://twitter.com/codedhomes" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
+                        <li><a href="#facebook"><i class="icon-facebook"></i> Facebook</a></li>
+                        <li><a href="#linkedin"><i class="icon-linkedin"></i> Linked In</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 push-down-top-md">
+                    <h4>Contact Us</h4>
+                    <address>
+                        1234 Main Street<br />
+                        Los Angeles, CA 90210
+                    </address>
+                </div>
+            </div>
+            <div class="text-center push-down-top-lg"><small>&copy; All Rights Reserved 2013</small></div>
+        </footer>
+    </main>
+
+    <section>
+        <div 
+            id="sent-modal" 
+            data-keyboard="false" 
+            data-backdrop="static" 
+            class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Listing Added</h4>
+              </div>
+              <div class="modal-body">
+                  <h4>Thank You!</h4>
+                  <p>Your listing should appear in our system after the hamsters are done spinning all the wheels.</p>
+                  <div class="img-center"><img src="img/hamster.png" /></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validationUtility.js"></script>
+    <script>
+        $(function() {
+            //$('#add-home-button').click(function() {
+            $('#add-home-button').click(function() {
+                var validationUtility = new ValidationUtility();
+
+                validationUtility.validate('add-home-form', function() {
+                    // TODO: Send the data to the server
+                    $('#add-home-form').get(0).reset();
+                    $('#sent-modal').modal('show');
+                }, function(e) {
+                    $(e).parent().parent().addClass('has-error');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
