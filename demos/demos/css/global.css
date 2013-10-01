@@ -46,6 +46,10 @@ footer {
     margin-bottom: 10px;
 }
 
+pre {
+    overflow:auto !important;
+}
+
 @media (min-width: 992px) {
 
     .push-down-top-md {
