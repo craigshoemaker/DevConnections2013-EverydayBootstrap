@@ -4,17 +4,12 @@
     <title>Layout Grid</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link href="css/global.css" rel="stylesheet" media="screen">
     <style>
         h2, footer {
-            margin-top:1000px;
-        }
-
-        .divider {
-            margin-top:300px;
-            margin-bottom:700px;
+            margin-top:1200px;
         }
 
         .row div {
@@ -48,7 +43,8 @@
                 <div class="bs-js-navbar-scrollspy">
                     <ul class="nav navbar-nav">
                         <li><a href="#twelve">12 Column Grid</a></li>
-                        <li><a href="#thresholds">Thresholds</a></li>
+                        <li><a href="#breakpoints">View Breakpoint</a></li>
+                        <li><a href="#multi-breakpoint">Multi-Breakpoint</a></li>
                         <li><a href="#offsets">Offsets</a></li>
                         <li><a href="#nesting">Nesting</a></li>
                     </ul>
@@ -58,21 +54,22 @@
 
         <main>
             <h2 class="h4" id="twelve">12 Column Grid</h2>
-            <pre class="visible-lg">
-&lt;div class="row"&gt;
-    &lt;div class="col-xs-1"&gt;1&lt;/div&gt;
-    &lt;div class="col-xs-1"&gt;2&lt;/div&gt;
-    &lt;div class="col-xs-1"&gt;3&lt;/div&gt;
-    &lt;div class="col-xs-1"&gt;4&lt;/div&gt;
-    &lt;div class="col-xs-1"&gt;5&lt;/div&gt;
-    &lt;div class="col-xs-1"&gt;6&lt;/div&gt;
-    &lt;div class="col-xs-1"&gt;7&lt;/div&gt;
-    &lt;div class="col-xs-1"&gt;8&lt;/div&gt;
-    &lt;div class="col-xs-1"&gt;9&lt;/div&gt;
-    &lt;div class="col-xs-1"&gt;10&lt;/div&gt;
-    &lt;div class="col-xs-1"&gt;11&lt;/div&gt;
-    &lt;div class="col-xs-1"&gt;12&lt;/div&gt;
-&lt;/div&gt;</pre>
+<pre style="line-height: 125%"><span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;row&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-xs-1&quot;</span><span style="color: #007700">&gt;</span>1<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-xs-1&quot;</span><span style="color: #007700">&gt;</span>2<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-xs-1&quot;</span><span style="color: #007700">&gt;</span>3<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-xs-1&quot;</span><span style="color: #007700">&gt;</span>4<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-xs-1&quot;</span><span style="color: #007700">&gt;</span>5<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-xs-1&quot;</span><span style="color: #007700">&gt;</span>6<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-xs-1&quot;</span><span style="color: #007700">&gt;</span>7<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-xs-1&quot;</span><span style="color: #007700">&gt;</span>8<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-xs-1&quot;</span><span style="color: #007700">&gt;</span>9<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-xs-1&quot;</span><span style="color: #007700">&gt;</span>10<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-xs-1&quot;</span><span style="color: #007700">&gt;</span>11<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-xs-1&quot;</span><span style="color: #007700">&gt;</span>12<span style="color: #007700">&lt;/div&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+</pre>
+
 
 
 
@@ -115,13 +112,13 @@
 
 
 
-            <h2 class="h4" id="thresholds">Thresholds</h2>
-            <pre class="visible-lg">
-&lt;div class="row"&gt;
-    &lt;div class="col-xs-4"&gt;column 1&lt;/div&gt;
-    &lt;div class="col-xs-4"&gt;column 2&lt;/div&gt;
-    &lt;div class="col-xs-4"&gt;column 3&lt;/div&gt;
-&lt;/div&gt;</pre>
+            <h2 class="h4" id="breakpoints">Breakpoints</h2>
+<pre style="line-height: 125%"><span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;row&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-xs-4&quot;</span><span style="color: #007700">&gt;</span>column 1<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-xs-4&quot;</span><span style="color: #007700">&gt;</span>column 2<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-xs-4&quot;</span><span style="color: #007700">&gt;</span>column 3<span style="color: #007700">&lt;/div&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+</pre>
             
 
 
@@ -130,12 +127,12 @@
 
 
 
-            <!-- thresholds -->
+            <!-- breakpoints -->
             <!-- xs, sm, md, lg -->
             <div class="row">
-                <div class="col-lg-4">column 1</div>
-                <div class="col-lg-4">column 2</div>
-                <div class="col-lg-4">column 3</div>
+                <div class="col-md-4">column 1</div>
+                <div class="col-md-4">column 2</div>
+                <div class="col-md-4">column 3</div>
             </div>
 
 
@@ -175,14 +172,6 @@
 
 
 
-            <div class="divider text-muted text-center">
-                <i class="icon-angle-down"></i> more <i class="icon-angle-down"></i>
-                <hr />
-            </div>
-            <pre class="visible-lg">
-&lt;div class="row"&gt;
-    &lt;div class="col-sm-12 col-md-6 col-lg-3"&gt;column&lt;/div&gt;
-&lt;/div&gt;</pre>
 
 
 
@@ -192,6 +181,13 @@
 
 
 
+            <h2 class="h4" id="multi-breakpoint">Multi Breakpoint Row</h2>
+<pre style="line-height: 125%"><span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;row&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-sm-12 </span>
+                <span style="background-color: #e0e0ff">col-md-6 </span>
+                <span style="background-color: #e0e0ff">col-lg-3&quot;</span><span style="color: #007700">&gt;</span>column<span style="color: #007700">&lt;/div&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+</pre>
             <!-- multi threshold row  -->
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-3">column</div>
@@ -228,11 +224,11 @@
 
 
             <h2 class="h4" id="offsets">Offsets</h2>
-            <pre class="visible-lg">
-&lt;div class="row"&gt;
-    &lt;div class="col-sm-4 col-sm-offset-4"&gt;column 1&lt;/div&gt;
-    &lt;div class="col-sm-4"&gt;column 2&lt;/div&gt;
-&lt;/div&gt;</pre>
+<pre style="line-height: 125%"><span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;row&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-sm-4 col-sm-offset-4&quot;</span><span style="color: #007700">&gt;</span>column 1<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-sm-4&quot;</span><span style="color: #007700">&gt;</span>column 2<span style="color: #007700">&lt;/div&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+</pre>
 
 
 
@@ -280,18 +276,18 @@
 
 
             <h2 class="h4" id="nesting">Nesting</h2>
-            <pre class="visible-lg">
-&lt;div class="row"&gt;
-    &lt;div class="col-sm-4"&gt;column 1&lt;/div&gt;
-    &lt;div class="col-sm-4"&gt;
-        &lt;div class="row"&gt;
-            &lt;div class="col-md-4"&gt;column 2.1&lt;/div&gt;
-            &lt;div class="col-md-4"&gt;column 2.2&lt;/div&gt;
-            &lt;div class="col-md-4"&gt;column 2.3&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col-sm-4"&gt;column 3&lt;/div&gt;
-&lt;/div&gt;</pre>
+<pre style="line-height: 125%"><span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;row&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-sm-4&quot;</span><span style="color: #007700">&gt;</span>column 1<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-sm-4&quot;</span><span style="color: #007700">&gt;</span>
+        <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;row&quot;</span><span style="color: #007700">&gt;</span>
+            <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-md-4&quot;</span><span style="color: #007700">&gt;</span>column 2.1<span style="color: #007700">&lt;/div&gt;</span>
+            <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-md-4&quot;</span><span style="color: #007700">&gt;</span>column 2.2<span style="color: #007700">&lt;/div&gt;</span>
+            <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-md-4&quot;</span><span style="color: #007700">&gt;</span>column 2.3<span style="color: #007700">&lt;/div&gt;</span>
+        <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #000077">class=</span><span style="background-color: #e0e0ff">&quot;col-sm-4&quot;</span><span style="color: #007700">&gt;</span>column 3<span style="color: #007700">&lt;/div&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+</pre>
 
 
 
