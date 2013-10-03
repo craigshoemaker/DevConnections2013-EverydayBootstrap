@@ -19,16 +19,44 @@
 
         .affix {
             position:fixed;
-            width:90%;
+            width:72.315%;
             top:10px;
         }
     </style>
     <title></title>
 </head>
+
+
+
+
+
+
+
 <body 
     data-spy="scroll"
     data-target="#site-nav"
-    data-offset="165">
+    data-offset="185">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="home-button"><a class="btn btn-default btn-sm btn-info" href="index.html">Home</a></div>
     <section class="container">
         <div class="jumbotron">
@@ -38,6 +66,12 @@
                 <p><a class="btn btn-primary btn-lg">Learn more</a></p>
             </div>
         </div>
+
+
+
+
+
+
         <nav id="site-nav" 
             class="navbar navbar-default navbar-static affix-top"
             data-spy="affix" 
@@ -63,6 +97,14 @@
                 </ul>
             </div>
         </nav>
+
+
+
+
+
+
+
+
         <div class="row">
             <div class="col-sm-3">
             </div>
@@ -78,5 +120,38 @@
 
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+
+            var scrollToHash = function(selector, offset) {
+                $("html, body").animate({
+                    scrollTop: $(selector).offset().top - offset
+                }, 350);
+            };
+
+            if (window.location.hash) {
+                var hash = window.location.hash;
+                scrollToHash(hash);
+            }
+
+            $('a[href^="#"]').click(function(e) {
+                var
+                    hash = this.getAttribute('href'),
+                    offset;
+
+                if (hash === '#one') {
+                    offset = $('.jumbotron').outerHeight();
+                } else if ($('#site-nav').hasClass('affix-top')) {
+                    offset = 150;
+                } else {
+                    offset = 100;
+                }
+
+                scrollToHash(hash, offset);
+
+                
+            });
+        });
+    </script>
 </body>
 </html>

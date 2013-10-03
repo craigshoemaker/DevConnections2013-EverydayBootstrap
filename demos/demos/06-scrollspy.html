@@ -11,6 +11,8 @@
         header {
             position:fixed;
             width:91%;
+            margin-left:auto;
+            margin-right:auto;
             background-color:#fff;
             padding:0px;
             margin:0px;
@@ -21,17 +23,63 @@
         main:last-child {
             margin-bottom:185px;
         }
+
+        @media (min-width: 992px) {
+            header {
+                width:72.315%;
+            }
+        }
     </style>
 </head>
+
+
+
+
+
+<!-- configure scrollable container -->
 <body 
     data-spy="scroll" 
     data-target="#scrollspy-navbar"
     data-offset="150">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="home-button"><a class="btn btn-default btn-sm btn-info" href="index.html">Home</a></div>
 
     <section class="container">
         <header>
             <h1>Scrollspy</h1>
+
+
+
+
+
+
+
+            <!-- configure navbar for highlighting -->
             <div
                 id="scrollspy-navbar" 
                 class="navbar navbar-default navbar-static" 
@@ -57,6 +105,23 @@
                     </ul>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </header>
         <main>
             <section id="introduction">
@@ -105,20 +170,20 @@
     <script>
         $(function() {
 
-            var scrollToHash = function(selector) {
+            var scrollToHash = function(selector, offset) {
                 $("html, body").animate({
-                    scrollTop: $(selector).offset().top - 140
+                    scrollTop: $(selector).offset().top - offset
                 }, 350);
             };
 
             if (window.location.hash) {
-                scrollToHash(window.location.hash);
+                scrollToHash(window.location.hash, 140);
             }
 
-            //*
+            /*
             $('a[href^="#"]').click(function(e) {
                 var hash = this.getAttribute('href');
-                scrollToHash(hash);
+                scrollToHash(hash, 140);
             });
             //*/
         });
